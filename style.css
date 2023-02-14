@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: url('assets/img/BMW1.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.header__container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 40px;
+}
+.header__picture .logo{
+    width: 150px;
+    cursor: pointer;
+
+}
+.header__button{
+    padding: 15px 50px;
+    background: #333;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    
+}
+.header__button a{
+    color: white;
+    text-decoration: none;
+}
+.banner__container{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 60px 0 60px 40px;
+    gap: 10px;
+
+}
+.banner__subtitle{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #e71b29;
+    margin-bottom: -20px;
+}
+.banner__title{
+    font-size: 4.5rem;
+    font-weight: 800;
+}
+.banner__description{
+    font-size: 1rem;
+    font-weight: 300;
+    color: #333937;
+}
+.banner__choose{
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.color__select{
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+.bike__color-red{
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #e71b29;
+}
+.bike__color-blue{
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #0d2cc8;
+}
+.bike__color-black{
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #030000;
+}

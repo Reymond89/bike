@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;800&display=swap" rel="stylesheet">
+</head>
+<body id="bike">
+    <header class="header__container">
+       <picture class="header__picture">
+            <img class="logo" src="assets/img/logo.png" alt="">
+       </picture>
+       <button class="header__button">
+            <a href="#">Test Drive</a>
+       </button>
+    </header>
+    <main>
+        <section class="banner__container">
+
+            <h3 class="banner__subtitle">THE BMW</h3>
+            <H1 class="banner__title">G 310 R</H1>
+            <p class="banner__description">Wake up with a smile on your face. Because every day is an opportunity to try something new, with the BMW G 310 R. It is an intuitive.</p>
+            <h4 class="banner__choose">Choose your color</h4>
+            <div class="color__select">
+                <span class="bike__color-red"></span>
+                <span class="bike__color-blue"></span>
+                <span class="bike__color-black"></span>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        let bikeRed = document.querySelector('.bike__color-red');
+        let bikeBlue = document.querySelector('.bike__color-blue');
+        let bikeBlack = document.querySelector('.bike__color-black');
+        let bike = document.getElementById('bike');
+
+        bikeRed.onclick = function() {
+            bike.style.backgroundImage='url(assets/img/BMW1.png)';
+        }
+        bikeBlue.onclick = function() {
+            bike.style.backgroundImage='url(assets/img/BMW2.png)';
+        }
+        bikeBlack.onclick = function() {
+            bike.style.backgroundImage='url(assets/img/BMW3.png)';
+        }
+    </script>
+</body>
+</html>
